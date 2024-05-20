@@ -9,22 +9,23 @@
 
 </head>
 
-<body>
+<body style="background-color:#F0CCFF">
     <header>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" style="background-color:#D166FF">
             <li class="nav-item">
-                <a class="nav-link" href="/genro/create">Crear Genero</a>
+                <a class="nav-link" href="/genero/create" style="color:black">Crear Genero</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/genero">Ver Generos</a>
+                <a class="nav-link" href="/genero" style="color:black">Ver Generos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/jeugo">Ver Juegos</a>
+                <a class="nav-link" href="/juego" style="color:black">Ver Juegos</a>
             </li>
         </ul>
     </header>
 
     <main>
+    <h1 style="text-align:center; padding-top:20px; padding-bottom:25px;">Editar Genero</h1>
         <form method="POST" action="/genero/{{$genero->id}}" id="formulario">
             @csrf
             @method('patch')

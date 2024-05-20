@@ -9,32 +9,33 @@
 
 </head>
 
-<body>
+<body style="background-color:#F0CCFF">
     <header>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" style="background-color:#D166FF">
             <li class="nav-item">
-                <a class="nav-link" href="/juego/create">Crear Juego</a>
+                <a class="nav-link" href="/juego/create" style="color:black">Crear Juego</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/juego">Ver Juegos</a>
+                <a class="nav-link" href="/juego" style="color:black">Ver Juegos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/genero">Ver Generos</a>
+                <a class="nav-link" href="/genero" style="color:black">Ver Generos</a>
             </li>
         </ul>
     </header>
 
     <main>
+    <h1 style="text-align:center; padding-top:20px; padding-bottom:25px;">Editar Juego</h1>
         <form method="POST" action="/juego/{{$juego->id}}" id="formulario">
             @csrf
             @method('patch')
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" name="nombre" id="nombre" class="form-control" value="{{$juego->nombre}}>
+                <input type="text" name="nombre" id="nombre" class="form-control" value="{{$juego->nombre}}">
             </div>
             <div class="mb-3">
                 <label for="marca" class="form-label">Marca</label>
-                <input type="text" class="form-control" name="marca" id="marca" value="{{$juego->marca}}>
+                <input type="text" class="form-control" name="marca" id="marca" value="{{$juego->marca}}">
             </div>
             <div class="mb-3">
                 <label for="precio" class="form-label">Precio</label>

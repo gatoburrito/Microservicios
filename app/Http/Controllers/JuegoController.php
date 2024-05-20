@@ -87,7 +87,7 @@ class JuegoController extends Controller
     public function destroy(Juego $juego)
     {
         $juego->delete();
-        // Session()->flash('success', 'Se ha eliminado con éxito');
+        Session()->flash('success', 'Se ha eliminado con éxito');
         return redirect('/juego');
     }
 }

@@ -8,21 +8,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color:#F0CCFF">
     <header>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" style="background-color:#D166FF">
             <li class="nav-item">
-                <a class="nav-link" href="/juego/create">Crear Juego</a>
+                <a class="nav-link" href="/juego/create" style="color:black">Crear Juego</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/juego">Ver Juegos</a>
+                <a class="nav-link active" href="/juego" style="color:black">Ver Juegos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/genero">Ver Generos</a>
+                <a class="nav-link" href="/genero" style="color:black">Ver Generos</a>
             </li>
         </ul>
     </header>
     <main>
+    <h1 style="text-align:center; padding-top:20px; padding-bottom:25px;">Juego</h1>
     <table class="table table-striped">
             <thead>
                 <tr>
@@ -51,7 +52,7 @@
                     <form method="POST" action="/juego/{{$juego->id}}" id="formulario">
                         @csrf
                         @method('DELETE')		
-                        <input class="btn btn-primary" type="submit"  name="action" value="Eliminar">
+                        <input class="btn btn-outline-danger" type="submit"  name="action" value="Eliminar">
                     </form>
                     </td>
                 </tr>

@@ -8,26 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
-<body>
+<body style="background-color:#F0CCFF">
     <header>
-        <ul class="nav justify-content-center">
+        <ul class="nav justify-content-center" style="background-color:#D166FF">
             <li class="nav-item">
-                <a class="nav-link" href="/genero/create">Crear Genero</a>
+                <a class="nav-link" href="/genero/create" style="color:black">Crear Genero</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="/genero">Ver Generos</a>
+                <a class="nav-link active" href="/genero" style="background-color:#A551C8"><span style="color:black">Ver Generos</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/juego">Ver Juegos</a>
+                <a class="nav-link" href="/juego" style="color:black">Ver Juegos</a>
             </li>
         </ul>
     </header>
     <main>
+    <h1 style="text-align:center; padding-top:20px; padding-bottom:25px;">Generos</h1>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Genero</th>
+                    <th scope="col">Ver</th>
                 </tr>
             </thead>
             <tbody>
